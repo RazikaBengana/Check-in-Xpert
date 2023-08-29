@@ -22,9 +22,9 @@
     <link href="{{asset('backend/assets/css/app.css')}}" rel="stylesheet">
     <link href="{{asset('backend/assets/css/icons.css')}}" rel="stylesheet">
     <!-- Theme Style CSS -->
-    <link rel="stylesheet" href="{{asset('assets/css/dark-theme.css')}}"/>
-    <link rel="stylesheet" href="{{asset('assets/css/semi-dark.css')}}"/>
-    <link rel="stylesheet" href="{{asset('assets/css/header-colors.css')}}"/>
+    <link rel="stylesheet" href="{{asset('backend/assets/css/dark-theme.css')}}"/>
+    <link rel="stylesheet" href="{{asset('backend/assets/css/semi-dark.css')}}"/>
+    <link rel="stylesheet" href="{{asset('backend/assets/css/header-colors.css')}}"/>
     <title>Admin Dashboard</title>
 </head>
 
@@ -64,7 +64,7 @@
 
 <!--end switcher-->
 <!-- Bootstrap JS -->
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('backend/assets/js/bootstrap.bundle.min.js')}}"></script>
 <!--plugins-->
 <script src="{{asset('backend/assets/js/jquery.min.js')}}"></script>
 <script src="{{asset('backend/assets/plugins/simplebar/js/simplebar.min.js')}}"></script>
@@ -75,7 +75,7 @@
 <script src="{{asset('backend/assets/plugins/chartjs/js/chart.js')}}"></script>
 <script src="{{asset('backend/assets/js/index.js')}}"></script>
 <!--app JS-->
-<script src="{{asset('assets/js/app.js')}}"></script>
+<script src="{{asset('backend/assets/js/app.js')}}"></script>
 <script>
     new PerfectScrollbar(".app-container")
 </script>
