@@ -58,13 +58,16 @@
 
             <div class="col-12">
                 <label for="inputEmailAddress" class="form-label">Email/Name/Phone</label>
-                <input type="text" name="login" class="form-control" id="login" placeholder="jhon@example.com">
+                <input type="text" name="login" class="form-control @error('login') is-invalid @enderror" id="login" placeholder="jhon@example.com">
+                @error('login')
+                    <span class="text-danger"> {{ $message }} </span>
+                @enderror
             </div>
             <div class="col-12">
                 <label for="inputChoosePassword" class="form-label">Password</label>
                 <div class="input-group" id="show_hide_password">
 
-                    <input type="password" name="password" class="form-control border-end-0" id="password" placeholder="Enter Password"> <a href="javascript:;" class="input-group-text bg-transparent"><i class="bx bx-hide"></i></a>
+                    <input type="password" name="password" class="form-control border-end-0" id="password" placeholder="Enter Password"><a href="javascript:;" class="input-group-text bg-transparent"><i class="bx bx-hide"></i></a>
                 </div>
             </div>
             <div class="col-md-6">
