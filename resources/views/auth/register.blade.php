@@ -29,7 +29,8 @@
                                 <span class="sp-color">Sign Up</span>
                                 <h2>Create an Account!</h2>
                             </div>
-                            <form id="contactForm">
+                            <form method="POST" action="{{ route('register') }}">
+                                @csrf
                                 <div class="row">
                                     <div class="col-lg-12 ">
                                         <div class="form-group">
@@ -43,9 +44,15 @@
                                         </div>
                                     </div>
 
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input type="password" name="password" id="password" class="form-control" required data-error="Please enter email" placeholder="Password">
+                                        </div>
+                                    </div>
+
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <input class="form-control" type="password" name="password" placeholder="Password">
+                                            <input class="form-control" type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirm Password">
                                         </div>
                                     </div>
 
@@ -58,7 +65,7 @@
                                     <div class="col-12">
                                         <p class="account-desc">
                                             Already have an account?
-                                            <a href="sign-in.html">Sign In</a>
+                                            <a href="{{ route('login') }}">Sign In</a>
                                         </p>
                                     </div>
                                 </div>
