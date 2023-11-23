@@ -17,9 +17,10 @@
 
             <div class="col-lg-6">
                 <div class="book-img-2">
-                    <img src="assets/img/book-img2.jpg" alt="Images">
+                    <img src="{{ asset('frontend/assets/img/book-img2.jpg') }}" alt="Images">
                 </div>
             </div>
         </div>
     </div>
 </div>
+
